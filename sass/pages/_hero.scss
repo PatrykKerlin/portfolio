@@ -1,0 +1,25 @@
+.section-hero {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 9.8rem 0;
+}
+
+.hero {
+	position: relative;
+
+	&__img {
+		&--ring {
+			position: absolute;
+			height: 150vh;
+			top: -40rem;
+			right: -42rem;
+		}
+
+		&--author {
+			position: absolute;
+			height: 80vh;
+			top: -10rem;
+			right: 15rem;
+		}
+	}
+}

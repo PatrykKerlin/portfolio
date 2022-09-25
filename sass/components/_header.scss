@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: $nav-height;
+	padding: 0 4.8rem;
+
+	// background-color: green;
+
+	&__nav {
+		display: flex;
+		list-style: none;
+
+		&__item:not(:last-child) {
+			padding-right: 2.4rem;
+		}
+	}
+}

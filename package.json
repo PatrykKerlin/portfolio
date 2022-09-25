@@ -1,0 +1,29 @@
+{
+	"name": "portfolio",
+	"version": "0.0.1",
+	"description": "portfolio",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir ./dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PatrykKerlin/portfolio.git"
+	},
+	"author": "Patryk Kerlin",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/PatrykKerlin/portfolio/issues"
+	},
+	"homepage": "https://github.com/PatrykKerlin/portfolio#readme",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.7.0",
+		"@types/animejs": "^3.1.5",
+		"parcel": "^2.7.0"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
+		"animejs": "^3.2.1"
+	}
+}

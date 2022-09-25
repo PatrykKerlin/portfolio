@@ -7,49 +7,78 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Document</title>
+		<link rel="stylesheet" href="sass/main.scss" />
+		<script type="module" src="js/controller.js"></script>
+		<title>PK</title>
 	</head>
 	<body>
+		<section class="section-terminal hidden">
+			<div class="terminal">
+				<div class="terminal__box"></div>
+			</div>
+		</section>
 		<header class="header">
-			<p class="logo">LOGO</p>
-			<nav class="navigation">
-				<ul class="nav-list">
-					<li class="nav-item">About me</li>
-					<li class="nav-item">Comments</li>
-					<li class="nav-item">Add a comment</li>
-					<li class="nav-item">Contact</li>
-				</ul>
-			</nav>
+			<div class="header__logo">LOGO</div>
+			<ul class="header__nav">
+				<li class="header__nav__item">Link1</li>
+				<li class="header__nav__item">Link2</li>
+				<li class="header__nav__item">Link3</li>
+			</ul>
 		</header>
 		<main>
 			<section class="section-hero">
-				<div class="hero">
-					<div class="hero-content">
-						<h1>
-							<div class="animated-text">
-								<span class="rotating-letter">L</span
-								><span class="falling-text"
-									>orem ipsum dolor sit amet consectetur
-									adipisicing elit.
-								</span>
+				<div class="hero grid grid--2-col">
+					<div class="hero__img">
+						<img
+							src="img/ring.webp"
+							alt="Semi transparent picture of a a circle"
+							class="hero__img hero__img--ring"
+						/>
+						<img
+							src="img/hero.webp"
+							alt="Transparent picture of page author"
+							class="hero__img hero__img--author"
+						/>
+					</div>
+				</div>					
+					<div class="hero__text">
+						<!-- <h1 class="heading-primary">
+							<div class="animated">
+								<span
+									class="animated__text animated__text--flip-up"
+									>P</span
+								><span
+									class="animated__text animated__text--flip-down"
+									>a</span
+								><span
+									class="animated__text animated__text--opacity-increase"
+									>t</span
+								><span
+									class="animated__text animated__text--fall-down"
+									>r</span
+								><span
+									class="animated__text animated__text--fall-up"
+									>y</span
+								><span
+									class="animated__text animated__text--spin-xyz"
+									>k</span
+								>
+								<span
+									class="animated__text animated__text--spin-a-lot"
+									>K</span
+								>erlin
 							</div>
 						</h1>
-						<a href="#" class="btn btn--contact">Contact me</a>
+						<p class="hero__text">
+							Suscipit aliquid qui voluptas ab voluptate sed,
+							debitis quaerat aperiam maiores.
+						</p> -->
 					</div>
 				</div>
 			</section>
-			<!-- <section class="section-about">
-				<div class="about">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsa magnam eaque hic quos itaque quam nulla doloremque
-					assumenda nobis repellendus doloribus dolorem consequatur
-					voluptas ullam veritatis quaerat, impedit, minima harum!
-				</div>
-			</section> -->
 		</main>
 	</body>
 </html>
