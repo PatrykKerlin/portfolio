@@ -4,7 +4,7 @@ class HeaderView extends View {
 	_header = document.querySelector('.header');
 
 	showHeaderView() {
-		this._slideDown(this._header, 500, 1000);
+		this._slideDown(this._header, 1000, 1500);
 	}
 }
 

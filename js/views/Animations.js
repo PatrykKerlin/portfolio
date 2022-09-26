@@ -3,8 +3,8 @@ import anime from 'animejs/lib/anime.es.js';
 export default class Animations {
 	_slideDown(target, dur, del) {
 		anime({
-			targets: target,
 			translateY: ['-150%', 0],
+			targets: target,
 			easing: 'linear',
 			duration: dur,
 			delay: del,
@@ -13,9 +13,9 @@ export default class Animations {
 
 	_slideLeft(target, dur, del) {
 		anime({
-			targets: target,
-			translateX: ['150%', 0],
 			// scale: [0, 1],
+			translateX: ['150%', 0],
+			targets: target,
 			easing: 'linear',
 			duration: dur,
 			delay: del,

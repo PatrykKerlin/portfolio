@@ -5,20 +5,16 @@
 	padding: 9.8rem 0;
 }
 
-.hero {
-	&__img-box {
-		&--ring {
-			position: absolute;
-			height: 100vw;
-			top: -30vw;
-			right: -49vw;
-		}
+.img-ring {
+	position: absolute;
+	height: 200vh;
+	top: -25vw;
+	left: 47vw;
+}
 
-		&--author {
-			position: absolute;
-			height: 80%;
-			top: 6vw;
-			right: 15vw;
-		}
-	}
+.img-author {
+	position: absolute;
+	height: 85vh;
+	top: 3vw;
+	left: 52vw;
 }

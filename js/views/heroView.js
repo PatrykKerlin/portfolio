@@ -2,8 +2,8 @@ import View from './View.js';
 
 class HeroView extends View {
 	_parentElement = document.querySelector('.hero__text');
-	_authorPicture = document.querySelector('.hero__img .hero__img--author');
-	_ringPicture = document.querySelector('.hero__img .hero__img--ring');
+	_authorPicture = document.querySelector('.img-author');
+	_ringPicture = document.querySelector('.img-ring');
 
 	_generateMarkup() {
 		return `
@@ -34,14 +34,14 @@ class HeroView extends View {
                 >erlin
             </div>
         </h1>
-        <p class="">
+        <p class="paragraph">
             Junior front-end/full-stack developer.
         </p>`;
 	}
 
 	showHeroView() {
-		this._slideLeft(this._ringPicture, 500, 500);
-		this._opacityIncrease(this._authorPicture, 1000, 1000);
+		this._slideLeft(this._ringPicture, 1000, 500);
+		this._opacityIncrease(this._authorPicture, 1500, 1500);
 		this._render();
 	}
 }
