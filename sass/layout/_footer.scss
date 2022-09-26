@@ -1,0 +1,11 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: $footer-height;
+	padding: 0 4.8rem;
+
+	&__logo {
+		height: 100%;
+	}
+}

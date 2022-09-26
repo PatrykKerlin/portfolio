@@ -1,25 +1,24 @@
 .section-hero {
+	display: block;
 	max-width: 120rem;
 	margin: 0 auto;
 	padding: 9.8rem 0;
 }
 
 .hero {
-	position: relative;
-
 	&__img {
 		&--ring {
 			position: absolute;
-			height: 150vh;
-			top: -40rem;
-			right: -42rem;
+			height: 200%;
+			top: -50%;
+			right: -45%;
 		}
 
 		&--author {
 			position: absolute;
-			height: 80vh;
-			top: -10rem;
-			right: 15rem;
+			height: 80%;
+			top: 10%;
+			right: 15%;
 		}
 	}
 }

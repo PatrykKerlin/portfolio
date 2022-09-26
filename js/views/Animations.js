@@ -4,7 +4,7 @@ export default class Animations {
 	_slideDown(target, dur, del) {
 		anime({
 			targets: target,
-			translateY: ['-100%', 0],
+			translateY: ['-150%', 0],
 			easing: 'linear',
 			duration: dur,
 			delay: del,
@@ -14,7 +14,7 @@ export default class Animations {
 	_slideLeft(target, dur, del) {
 		anime({
 			targets: target,
-			translateX: ['100%', 0],
+			translateX: ['150%', 0],
 			// scale: [0, 1],
 			easing: 'linear',
 			duration: dur,

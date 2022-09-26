@@ -1,8 +1,15 @@
+section {
+	height: calc(
+		100vh - #{$navigation-height} - #{$footer-height} -
+			(2 * #{$body-padding})
+	);
+	// height: 500px;
+}
+
 .grid {
 	display: grid;
 
 	&--2-col {
 		grid-template-columns: repeat(2, 1fr);
-		// background-color: red;
 	}
 }

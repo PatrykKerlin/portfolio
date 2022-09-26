@@ -10,6 +10,8 @@ body {
 			rgba(#020a11, 0.9) 50%
 		),
 		url(../img/background.webp);
-	background-size: cover;
+	background-size: cover, cover, cover;
+	background-position: center, center, center;
 	height: 100vh;
+	width: 100vw;
 }
