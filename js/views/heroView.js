@@ -34,9 +34,8 @@ class HeroView extends View {
                 >erlin
             </div>
         </h1>
-        <p class="hero__text">
-            Suscipit aliquid qui voluptas ab voluptate sed,
-            debitis quaerat aperiam maiores.
+        <p class="">
+            Junior front-end/full-stack developer.
         </p>`;
 	}
 

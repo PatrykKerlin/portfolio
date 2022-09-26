@@ -6,19 +6,19 @@
 }
 
 .hero {
-	&__img {
+	&__img-box {
 		&--ring {
 			position: absolute;
-			height: 200%;
-			top: -50%;
-			right: -45%;
+			height: 100vw;
+			top: -30vw;
+			right: -49vw;
 		}
 
 		&--author {
 			position: absolute;
 			height: 80%;
-			top: 10%;
-			right: 15%;
+			top: 6vw;
+			right: 15vw;
 		}
 	}
 }
