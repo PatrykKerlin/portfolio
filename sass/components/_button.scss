@@ -3,36 +3,40 @@
 	&:visited {
 		text-transform: uppercase;
 		text-decoration: none;
+		box-shadow: inset 0 0 0 3px $color-grey-light;
 		padding: 1.5rem 4rem;
 		display: inline-block;
 		border-radius: 3px;
-		box-shadow: inset 0 0 0 3px $color-grey-light;
 		transition: all 0.2s;
-		// position: relative;
+		position: relative;
+		z-index: 0;
 	}
 
 	&:hover {
 		transform: translateY(-3px);
-		box-shadow: 0 1rem 2rem transparent-color($color-white, 0.2);
+		box-shadow: inset 0 0 0 3px $color-grey-light,
+			0 1rem 2rem transparent-color($color-white, 0.2);
 
 		&::after {
 			transform: scaleX(1.4) scaleY(1.6);
 			opacity: 0;
+			background-color: $color-grey-light;
 		}
 	}
 
 	&:active {
 		transform: translateY(-1px);
-		box-shadow: 0 0.5rem 1rem transparent-color($color-white, 0.2);
+		box-shadow: inset 0 0 0 3px $color-grey-light,
+			0 0.5rem 1rem transparent-color($color-white, 0.2);
 	}
 
 	&--main {
 		background-color: $color-grey-light;
 		color: $color-grey-dark;
+	}
 
-		// &::after {
-		// 	background-color: $color-white;
-		// }
+	&--standard {
+		color: $color-grey-light;
 	}
 
 	&::after {
@@ -46,10 +50,5 @@
 		left: 0;
 		z-index: -1;
 		transition: all 0.4s;
-	}
-
-	&--animated {
-		animation: moveInBottom 0.5s ease-out 0.75s;
-		animation-fill-mode: backwards;
 	}
 }

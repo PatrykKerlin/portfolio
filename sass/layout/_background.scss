@@ -1,4 +1,4 @@
-body {
+.background {
 	background-image: radial-gradient(
 			circle,
 			rgba(#212529, 0) 60%,
@@ -10,9 +10,9 @@ body {
 			rgba(#020a11, 0.9) 50%
 		),
 		url(../img/background.webp);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-size: cover, cover, cover;
+	background-position: center, center, center;
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	height: 100%;
 	width: 100%;
 }
