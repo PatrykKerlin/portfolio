@@ -42,7 +42,7 @@ class HeroView extends View {
 	showHeroView() {
 		this._slideLeft(this._ringPicture, 1000, 500);
 		this._opacityIncrease(this._authorPicture, 1500, 1500);
-		this._render();
+		// this._render();
 	}
 }
 

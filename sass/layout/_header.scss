@@ -1,9 +1,11 @@
 .header {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: $navigation-height;
 	padding: 0 4.8rem;
+	z-index: 99;
 
 	&__nav {
 		display: flex;

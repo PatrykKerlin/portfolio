@@ -7,6 +7,7 @@ section {
 
 .grid {
 	display: grid;
+	height: 100%;
 
 	&--2-col {
 		grid-template-columns: repeat(2, 1fr);
