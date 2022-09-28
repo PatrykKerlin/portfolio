@@ -3,8 +3,9 @@
 import '@babel/polyfill';
 
 import terminalView from './views/terminalView.js';
-import heroView from './views/heroView.js';
 import headerView from './views/headerView.js';
+import footerView from './views/footerView.js';
+import heroView from './views/heroView.js';
 import {TERMINAL_STRINGS} from './config.js';
 
 async function controlTerminalView() {
@@ -15,5 +16,6 @@ async function controlTerminalView() {
 
 (function () {
 	headerView.showHeaderView();
+	footerView.showFooterView();
 	heroView.showHeroView();
 })();
