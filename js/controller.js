@@ -2,19 +2,20 @@
 
 import '@babel/polyfill';
 
-import terminalView from './views/terminalView.js';
+import introView from './views/introView.js';
 import headerView from './views/headerView.js';
 import footerView from './views/footerView.js';
 import heroView from './views/heroView.js';
-import {TERMINAL_STRINGS} from './config.js';
 
-async function controlTerminalView() {
-	await terminalView.renderString(TERMINAL_STRINGS);
+function wait(time) {
+	return new Promise((resolve) => {
+		setTimeout(resolve, time);
+	});
 }
 
-// controlTerminalView();
-
 (function () {
+	// introView.showIntroView();
+	// wait(13000).then(() => this._setBackground(this._background));
 	headerView.showHeaderView();
 	footerView.showFooterView();
 	heroView.showHeroView();

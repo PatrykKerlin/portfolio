@@ -4,7 +4,7 @@ class FooterView extends View {
 	_footer = document.querySelector('.footer');
 
 	showFooterView() {
-		this._slideUp(this._footer, 'linear', 1000, 1500);
+		this._slideUp(this._footer, 'linear', 2000, 1500);
 	}
 }
 

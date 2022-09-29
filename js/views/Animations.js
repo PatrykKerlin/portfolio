@@ -25,7 +25,6 @@ export default class Animations {
 
 	_slideLeft(target, eas, dur, del) {
 		anime({
-			// scale: [0, 1],
 			translateX: ['100%', 0],
 			opacity: [0, 1],
 			targets: target,
@@ -59,7 +58,40 @@ export default class Animations {
 	_rotateRight(target, eas, dur, del) {
 		anime({
 			opacity: [0, 1],
-			rotate: '360deg',
+			rotate: ['360deg', 0],
+			targets: target,
+			easing: eas,
+			duration: dur,
+			delay: del,
+		});
+	}
+
+	_rotateLeft(target, eas, dur, del) {
+		anime({
+			opacity: [0, 1],
+			rotate: ['-360deg', 0],
+			targets: target,
+			easing: eas,
+			duration: dur,
+			delay: del,
+		});
+	}
+
+	_rotateY(target, eas, dur, del) {
+		anime({
+			opacity: [0, 1],
+			rotateY: ['720deg', 0],
+			targets: target,
+			easing: eas,
+			duration: dur,
+			delay: del,
+		});
+	}
+
+	_rotateX(target, eas, dur, del) {
+		anime({
+			opacity: [0, 1],
+			rotateX: ['360deg', 0],
 			targets: target,
 			easing: eas,
 			duration: dur,
@@ -83,6 +115,18 @@ export default class Animations {
 			opacity: [0, 1],
 			rotateX: ['180deg', 0],
 			translateY: ['100%', 0],
+			targets: target,
+			easing: eas,
+			duration: dur,
+			delay: del,
+		});
+	}
+
+	_fallUp(target, eas, dur, del) {
+		anime({
+			opacity: [0, 1],
+			rotateX: ['-180deg', 0],
+			translateY: ['-100%', 0],
 			targets: target,
 			easing: eas,
 			duration: dur,

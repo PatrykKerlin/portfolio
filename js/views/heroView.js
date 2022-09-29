@@ -6,6 +6,9 @@ class HeroView extends View {
 	_ringPicture = document.querySelector('.img-ring');
 	_welcomeText = document.querySelector('.welcome-big');
 	_developerText = document.querySelector('.developer-small');
+	_heroParagraph = document.querySelector('.hero-paragraph');
+	_btnContact = document.querySelector('.btn-contact');
+	_btnAbout = document.querySelector('.btn-about');
 	_letters = document.querySelectorAll('.letter');
 
 	_generateMarkup() {
@@ -49,11 +52,20 @@ class HeroView extends View {
 		this._scaleUp(this._letters[3], 'easeOutBack', 600, 1700);
 		this._fallDown(this._letters[4], 'easeOutBack', 1000, 2100);
 		this._slideLeft(this._letters[5], 'easeOutBack', 600, 2500);
+		this._rotateY(this._letters[6], 'easeOutBack', 600, 2900);
+		this._fallUp(this._letters[7], 'easeOutBack', 1000, 3300);
+		this._rotateLeft(this._letters[8], 'easeOutBack', 600, 3700);
+		this._rotateX(this._letters[9], 'easeOutBack', 600, 4100);
+		this._slideUp(this._letters[10], 'easeOutBack', 600, 4500);
+		this._slideLeft(this._letters[11], 'easeOutBack', 600, 4900);
 
-		this._slideLeft(this._ringPicture, 'linear', 1000, 500);
-		this._opacityIncrease(this._authorPicture, 'linear', 1500, 1500);
-		this._opacityIncrease(this._welcomeText, 'linear', 1000, 1500);
-		this._opacityIncrease(this._developerText, 'linear', 1000, 1500);
+		this._slideLeft(this._ringPicture, 'linear', 1000, 4500);
+		this._opacityIncrease(this._authorPicture, 'linear', 1500, 5500);
+		this._slideUp(this._welcomeText, 'linear', 5000, 500);
+		this._opacityIncrease(this._developerText, 'linear', 1000, 6000);
+		this._slideRight(this._heroParagraph, 'easeInOutElastic', 2000, 6250);
+		this._scaleUp(this._btnContact, 'easeOutBack', 1000, 6500);
+		this._scaleUp(this._btnAbout, 'easeOutBack', 1000, 6500);
 		// this._render();
 	}
 }
