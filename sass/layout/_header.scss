@@ -1,10 +1,11 @@
 .header {
 	position: relative;
+	max-width: 130rem;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: $navigation-height;
-	padding: 0 4.8rem;
 	z-index: 99;
 
 	&__nav {
@@ -12,6 +13,12 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
+		z-index: 99;
+
+		&__item {
+			display: inline-block;
+			z-index: 99;
+		}
 
 		&__item:not(:last-child) {
 			padding-right: 2.4rem;

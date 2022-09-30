@@ -1,3 +1,7 @@
+body {
+	padding: $body-padding;
+}
+
 .section-hero {
 	height: calc(
 		100vh - #{$navigation-height} - #{$footer-height} -

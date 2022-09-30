@@ -41,10 +41,10 @@
 }
 
 .developer-small {
+	display: inline-block;
 	position: absolute;
-	left: -9%;
-	top: 45%;
-	transform: rotate(-90deg);
+	left: 0;
+	top: -2%;
 }
 
 .welcome-big {

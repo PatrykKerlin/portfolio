@@ -4,7 +4,6 @@ body {
 	font-size: $default-font-size;
 	// line-height: 1.7;
 	color: $color-grey-light;
-	padding: $body-padding;
 }
 
 .header__nav__item {
@@ -24,10 +23,11 @@ body {
 .developer-small {
 	text-transform: uppercase;
 	color: transparent-color($color-grey-light, 0.6);
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 .welcome-big {
+	text-transform: lowercase;
 	color: transparent-color($color-grey-light, 0.15);
 	font-size: 20rem;
 	font-weight: 800;
