@@ -26,6 +26,10 @@
 			gap: 8rem;
 		}
 	}
+
+	&__imgs {
+		z-index: -1;
+	}
 }
 
 .img-ring {
