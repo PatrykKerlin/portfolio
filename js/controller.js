@@ -6,8 +6,8 @@ import headerView from './views/headerView.js';
 import footerView from './views/footerView.js';
 import heroView from './views/heroView.js';
 
-background = document.querySelector('.background');
-logo = document.querySelector('.intro');
+const background = document.querySelector('.background');
+const logo = document.querySelector('.intro');
 
 const introAnimation = anime({
 	targets: logo,
