@@ -166,7 +166,7 @@
 }
 
 //   /**************************/
-//   /* BELOW 704px (Smaller tablets) */
+//   /* BELOW 704px */
 //   /**************************/
 
 @media (max-width: 44em) {
@@ -218,10 +218,13 @@
 //   }
 
 //   /**************************/
-//   /* BELOW 544px (Phones) */
+//   /* BELOW 544px */
 //   /**************************/
 
 @media (max-width: 34em) {
+	section {
+		padding: 30rem 0;
+	}
 	.grid {
 		&--2-col {
 			grid-template-columns: 1fr;
