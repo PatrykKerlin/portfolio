@@ -223,6 +223,10 @@
 	html {
 		font-size: 50%;
 	}
+
+	.welcome-big {
+		bottom: -6% !important;
+	}
 }
 
 @media (max-height: 29em) {
@@ -253,13 +257,15 @@
 	}
 
 	.welcome-big {
-		font-size: 16rem;
+		font-size: 12rem;
+		bottom: -8% !important;
 	}
 
 	.btn {
 		&:link,
 		&:visited {
 			font-size: 1.8rem;
+			padding: 1rem 4rem;
 		}
 	}
 }
