@@ -230,6 +230,12 @@
 			grid-template-columns: 1fr;
 		}
 	}
+
+	.hero {
+		&__text-box {
+			margin-bottom: 30% !important;
+		}
+	}
 }
 
 //   /**************************/
