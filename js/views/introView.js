@@ -19,13 +19,6 @@ class IntroView {
 		background.classList.remove('background--black');
 		background.classList.add('background--blue');
 	}
-
-	wait(time) {
-		return new Promise((resolve) => {
-			setTimeout(resolve, time);
-		});
-	}
-
 	showIntroView() {
 		this._background.classList.remove('background--blue');
 		this._logoAanimation(this._introLogo);

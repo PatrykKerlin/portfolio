@@ -1,13 +1,14 @@
 import View from './View.js';
 
 class HeroView extends View {
+	_sectionHero = document.querySelector('.section-hero');
 	_parentElement = document.querySelector('.hero__text');
 	_authorPicture = document.querySelector('.img-author');
 	_ringPicture = document.querySelector('.img-ring');
 	_welcomeText = document.querySelector('.welcome-big');
 	_developerText = document.querySelector('.developer-small');
 	_heroParagraph = document.querySelector('.hero-paragraph');
-	_btnContact = document.querySelector('.btn-contact');
+	_btnContact = document.querySelector('.btn-contact-big');
 	_btnAbout = document.querySelector('.btn-about');
 	_letters = document.querySelectorAll('.letter');
 
@@ -46,6 +47,8 @@ class HeroView extends View {
 	}
 
 	showHeroView() {
+		// this._sectionHero.classList.remove('hidden');
+
 		this._slideRight(this._letters[0], 'easeOutBack', 600, 500);
 		this._slideUp(this._letters[1], 'easeOutBack', 600, 900);
 		this._rotateRight(this._letters[2], 'easeOutBack', 600, 1300);

@@ -146,12 +146,19 @@
 		flex-direction: column;
 		gap: 4.8rem;
 
-		&--item {
-			font-size: 3.2rem;
-		}
-
-		&--item:not(:last-child) {
+		li:not(:last-child) {
 			padding-right: 0;
+		}
+	}
+
+	.nav-link {
+		font-size: 3.2rem;
+	}
+
+	.btn--small {
+		&:link,
+		&:visited {
+			font-size: 3.2rem;
 		}
 	}
 
@@ -254,8 +261,14 @@
 	section {
 		padding: 2.4rem 0;
 	}
-	.header__nav__list {
-		&--item {
+
+	.nav-link {
+		font-size: 2.4rem;
+	}
+
+	.btn--small {
+		&:link,
+		&:visited {
 			font-size: 2.4rem;
 		}
 	}
@@ -292,7 +305,13 @@
 		&:link,
 		&:visited {
 			font-size: 1.8rem;
-			padding: 1rem 4rem;
+		}
+
+		&--big {
+			&:active,
+			&:visited {
+				padding: 1rem 4rem;
+			}
 		}
 	}
 }
@@ -310,6 +329,9 @@
 		&--2-col {
 			grid-template-columns: 1fr;
 		}
+	}
+	.header__nav__list {
+		gap: 3.2rem;
 	}
 
 	.hero {
