@@ -2,15 +2,8 @@ body {
 	padding: $body-padding;
 }
 
-.section-hero {
-	height: calc(
-		100vh - #{$navigation-height} - #{$footer-height} -
-			(2 * #{$body-padding})
-	);
-}
-
 .section-intro {
-	height: calc(100vh - (2 * #{$body-padding}));
+	min-height: calc(100% - (2 * #{$body-padding}));
 	display: flex;
 	align-items: center;
 	justify-content: center;
